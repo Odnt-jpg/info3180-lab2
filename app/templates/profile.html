@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        .bg-primary{
+            --bs-bg-opacity:50%;
+            background-color: rgba(0, 0, 0, var(--bs-bg-opacity)) !important;   
+           }
+           body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            background-color: #942425;
+            display: flex;
+            line-height: 1.5;
+            margin-left: 80px;
+            margin-right: 80px;
+            }
+            .HeaderContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                padding: 3em;
+                padding-top: 4em;
+                background-color: rgba(166,45,46,1) ;
+                
+            }
+            .bio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 2em;
+                padding-top: 2em;
+                background-color:white;
+            }
+            .follower-count {
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .count {
+                font-size: 32px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .label {
+                font-size: 18px;
+                color: #777;
+                display: block;
+                margin-top: 10px;
+            }
+            .info{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 20px;
+                margin-left: 20em;
+                margin-right: 20em;
+            }
+            p,h2{
+                font-size: 18px;
+                
+            }
+            p{
+                text-shadow: #252525;
+            }
+            .btn{
+                border-radius: 12px;
+                background-color: rgb(137, 14, 14);
+                color: white;
+                transform: scale(1.25);
+                font-weight: bold;
+                
+                
+            }
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .profile{
+                /* padding: 2em 0 ; */
+                border-radius: 30px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                
+                margin-left: 20em;
+                margin-right: 20em;
+                overflow:hidden;
+            }
+    </style>
+{% endblock %}a
+{% block main %}
+<div class=" profile">
+    <div class="HeaderContainer">
+        <div id = "icon-container">
+            <img src="{{ url_for('static', filename='images/chibi as23ia.png') }}" id ="icon">
+        </div>
+        
+        <h1 style = "font-weight: bolder; color:white">Raheem Doman</h1>
+        <p style = " color:white"> @_Odnt_</p>
+        <p style = " color:white">Kingston, Jamaica</p>
+        <p style = " color:white">Joined {{ date_joined }}</p>
+    </div>
+    <div class= "bio">
+        <p style = " color:grey; align-self: center; ">I draw stuff and play a lot of Monster Hunter. That’s pretty much it.</p>
+        <div class = "info">
+            <div class="follower-count">
+                <span class="count">234</span>
+                <span class="label">Posts</span>
+            </div>
+            <div class="follower-count">
+                <span class="count">1</span>
+                <span class="label">Following</span>
+            </div>
+            <div class="follower-count">
+                <span class="count">1,234</span>
+                <span class="label">Followers</span>
+            </div>
+            
+        </div>
+        <div class="btn-container">
+            <button class="btn"> Follow </button>
+    </div>
+   
+</div>
+
+
+
+
+{% endblock %}

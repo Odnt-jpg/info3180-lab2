@@ -1,6 +1,46 @@
 {% extends "base.html" %}
 
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        .bg-primary{
+            --bs-bg-opacity:50%;
+            background-color: rgba(0, 0, 0, var(--bs-bg-opacity)) !important;   
+           }
+          
+    </style>
+{% endblock %}
 {% block main %}
-<h1>About</h1>
-<p>This webpage is about {{ name }}.</p>
+</head>
+<body >
+    <div id="container">
+        <div id="containername">
+            <h1 id="h1" style="font-size: 64px; margin-bottom: 0; line-height: .75;">Raheem</h1>
+            <h1 id="h1" style="font-size: 96px; margin-top: 0; font-weight: bold; margin-bottom: 25px; line-height: .75;">DOMAN</h1>
+            <hr id="dashed-line">
+            <img src="{{ url_for('static', filename='images/Asia-Sitting.gif') }}" id="sittingArt" alt="IconImage">
+        </div>
+
+        <div id="icon-container" href="{{ url_for('profile') }}">
+            <img src="{{ url_for('static', filename='images/chibi as23ia.png') }}" alt="IconImage" id="icon">
+        </div>
+    </div>
+
+    <div id="mainImageContainer">
+        <div id="rectangle"></div>
+        
+        <img src="{{ url_for('static', filename='images/al.png') }}" alt="Al:D" id="mainArt">
+
+        <h2 id="h2">About Me</h2>
+
+        <hr id="dashed-line" style="position: absolute; left: 990px; top: 200px; z-index: 50; width: 268px; opacity: 1;">
+
+        <p id="p">My name is Raheem Doman, I major in Software Engineering. My favorite YouTube channel is CoryxKenshin.</p>
+    </div>
+</body>
+</html>
+
 {% endblock %}

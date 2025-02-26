@@ -1,0 +1,142 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    /* line-height: 1.5; */
+    background-color: #942425;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#containername {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: .75;
+}
+
+#h1 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: white;
+}
+
+#h2 {
+    position: absolute;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 48px;
+    color: white;
+    font-size: 48px;
+    top: 100px;
+    left: 1000px;
+    z-index: 30;
+}
+
+#dashed-line {
+    border-top: 6px dashed white;
+    width: 160%;
+    height: 1px;
+    margin: 2px 0;
+    opacity: 1;
+}
+
+#icon-container {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border: 7px solid white;
+}
+
+#icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-position: -80% 20%;
+    transform: scale(1.6);
+}
+
+#mainTextContainer {
+    display: flex;
+}
+
+#mainImageContainer {
+    position: relative;
+    width: 100%;
+    height: 584px;
+    overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgb(166, 45, 46);
+    background: linear-gradient(180deg, rgba(166, 45, 46, 1) 0%, rgba(163, 48, 49, 1) 0%, rgba(189, 56, 57, 1) 76%, rgba(159, 42, 42, 1) 85%, rgba(148, 36, 37, 1) 97%)
+}
+
+#mainArt {
+    position: absolute;
+    width: 200%;
+    height: 150%;
+    object-fit: contain;
+    object-position: center;
+    object-position: 0% 10%;
+    transform: scale(1.);
+    top: -70px;
+    left: 0px;
+}
+
+#sittingArt {
+    position: absolute;
+    top: 75px;
+    left: 500px;
+    width: 150px;
+}
+
+#rectangle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150%;
+    height: 100%;
+    opacity: 76%;
+    background-color: black;
+    rotate: 130.67deg;
+    transform-origin: center;
+    z-index: 10;
+}
+
+#p {
+    position: relative;
+    font-family: "Quantico", serif;
+    font-weight: 400;
+    font-style: regular;
+    color: white;
+    line-height: auto;
+    font-size: 24px;
+    width: 430px;
+    margin-top: 60px;
+    left: 400px;
+    text-align: center;
+    z-index: 30;
+}
